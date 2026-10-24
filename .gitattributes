@@ -1,0 +1,6 @@
+# Keep LF in scripts: they run on Linux and macOS.
+# `text eol=lf` also forces LF when checking out on Windows.
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+LICENSE text eol=lf

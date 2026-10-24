@@ -1,0 +1,48 @@
+# Run results: they contain xpubs, UTXOs, balances and LND snapshots.
+# NEVER commit them. Folder format: bip110-YYYYMMDD-HHMMSS/
+bip110-*/
+results/
+output/
+outputs/
+salida/
+snapshot*/
+*.summary.txt
+summary.txt
+
+# data/ holds public test vectors that ARE committed
+# (bip340/bip39/bip32/unified_sighash/aez_hash...). If results are ever stored
+# inside data/, use data/results/ to exclude them.
+data/results/
+
+# State and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Secrets, in case someone copies them here by mistake
+*.macaroon
+macaroons/
+*.seed
+*.key
+*.env
+.env
+.env.*
+secrets/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local SSH
+id_*
+known_hosts*
+
+# Loose notes and commands (they may contain your own addresses)
+comand.txt
+comando.txt
+notas*.txt
+*.local.md
